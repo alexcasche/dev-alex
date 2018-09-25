@@ -1,25 +1,28 @@
 .c-homepage-section {
-    display: flex;
-    justify-content: center;
-    padding: 175px 40px 300px;
-    font-family: "Neue Hass";
+    padding: 184px 0;
+    font-family: $font-family-base;
 }
 
 .c-homepage-section__left {
-    margin-right: 30px;
+    flex-grow: 0;
 }
 
 .c-homepage-section__right {
-    margin-left: 30px;
+    margin-left: 78px;
 }
 
 .c-homepage-section__header {
-    font-size: 2.5rem;
+    margin: 0;
+    font-size: 61px;
     font-weight: $font-weight-black;
+    line-height: 61px;
+    letter-spacing: -1px;
 }
 
 .c-homepage-section__content {
-    font-size: 1rem;
+    margin: 10px 0 22px;
+    font-size: 15px;
+    font-weight: $font-weight-normal;
     line-height: 21px;
-    font-weight: normal;
+    letter-spacing: .02px;
 }

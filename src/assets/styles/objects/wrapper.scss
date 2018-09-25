@@ -1,6 +1,12 @@
 /*================ Site wrappers ================*/
 
 .o-wrapper {
+    width: 100%;
+    max-width: $width-wrapper-base;
+    margin: 0 auto;
     padding: 0 50px;
-    max-width: 1024px;
+}
+
+.o-wrapper--small {
+    max-width: $width-wrapper-small;
 }

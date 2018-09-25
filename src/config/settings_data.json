@@ -3,39 +3,16 @@
   "presets": {
     "Default": {
       "sections": {
-        "collection-list": {
-          "type": "collection-list",
-          "blocks": {
-            "collection-list-0": {
-              "type": "collection"
-            },
-            "collection-list-1": {
-              "type": "collection"
-            },
-            "collection-list-2": {
-              "type": "collection"
-            }
-          },
-          "block_order": [
-            "collection-list-0",
-            "collection-list-1",
-            "collection-list-2"
-          ]
+        "homepage-intro": {
+          "type": "homepage-intro"
         },
-        "featured-collection": {
-          "type": "featured-collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
-        "featured-product": {
-          "type": "featured-product"
+        "product-category": {
+          "type": "product-category"
         }
       },
       "content_for_index": [
-        "collection-list",
-        "featured-collection",
-        "featured-product"
+        "homepage-intro",
+        "product-category"
       ]
     }
   }

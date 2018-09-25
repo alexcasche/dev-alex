@@ -1,0 +1,16 @@
+.c-product-category {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 184px;
+}
+
+.c-product-category__header {
+    width: 600px;
+    max-width: 100%;
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 86px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 87px;
+}

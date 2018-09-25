@@ -1,0 +1,13 @@
+.o-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.o-grid__item {
+    flex-basis: 25%;
+}
+
+.o-grid__item--thirds {
+    flex-basis: 33%;
+}

@@ -1,0 +1,39 @@
+<div class="c-product-category">
+    <div class="o-wrapper o-wrapper--small">
+        {% assign collection = collections[section.settings.featured] %}
+        <h1 class="c-product-category__header">{{ collection.title }}</h1>
+    </div>
+    <div class="o-wrapper">
+        <div class="o-grid">
+            {% for product in collection.products %}
+                <div class="c-product-box o-grid__item">
+                    <img src="{{ product.images[1].src | img_url: '900x1200' }}" alt="{{ image.alt | escape }}">
+                    <hr class="c-product-box__divider" />
+                    <p class="c-product-box__title">{{ product.title }}</p>
+                    <button class="c-button u-fullWidth">Select</button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Featured Collection",
+        "settings": [
+            {
+                "id": "featured",
+                "type": "select",
+                "label": "Featured Collection",
+                "options": [
+                    {
+                        "group": "value",
+                        "value": "replacement-filters",
+                        "label": "Replacement Filters"
+                    }
+                ],
+                "default": "replacement-filters"
+            }
+        ]
+    }
+{% endschema %}
