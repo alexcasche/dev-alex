@@ -1,0 +1,10 @@
+/*================ Flex ================*/
+
+.o-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.o-flex__item {
+    flex: 1;
+}

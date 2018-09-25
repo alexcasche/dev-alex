@@ -9,8 +9,19 @@ const postCSSNext = require('postcss-cssnext');
 const postCSSNested = require('postcss-nested');
 const postCSSImport = require('postcss-import');
 
+// const alias = {
+//   fonts: path.resolve("./src/assets/fonts")
+// }
+
 module.exports = {
   'paths.theme.src': config => path.join(config.get('paths.theme'), 'src'),
+  // slateTools: {
+  //   extends: {
+  //     dev: {
+  //       resolve: { alias }
+  //     }
+  //   }
+  // },
   'webpack.postcss.plugins': (config, defaultValue) => [
     postCSSNext,
     postCSSImport,
