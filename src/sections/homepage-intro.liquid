@@ -1,0 +1,43 @@
+<section class="c-homepage__section u-bgBlue">
+  <div class="c-homepage-twoColumn">
+    <div class="c-homepage-twoColumn__side">
+      <h1 class="c-homepage-twoColumn__header">
+          {{ section.settings.homepage-intro-header}}
+      </h1>
+    </div>
+    <div class="c-homepage-twoColumn__side">
+      <p class="c-homepage-twoColumn__content">
+          {{ section.settings.homepage-intro-content-one }}
+      </p>
+      <p class="c-homepage-twoColumn__content">
+          {{ section.settings.homepage-intro-content-two }}
+      </p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Homepage Intro",
+    "settings": [
+      {
+        "id": "homepage-intro-header",
+        "type": "text",
+        "label": "Header",
+        "default": "Header"
+      },
+      {
+        "id": "homepage-intro-content-one",
+        "type": "textarea",
+        "label": "Content 1",
+        "default": "Content 1"
+      },
+      {
+        "id": "homepage-intro-content-two",
+        "type": "textarea",
+        "label": "Content 2",
+        "default": "Content 2"
+      }
+    ]
+  }
+{% endschema %}
