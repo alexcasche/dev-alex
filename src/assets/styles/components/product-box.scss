@@ -5,16 +5,19 @@
 }
 
 .c-product-box__image {
-
+    margin-bottom: 45px;
 }
 
 .c-product-box__divider {
     width: 100%;
     height: 1px;
+    margin: 0 0 12px;
     background-color: #000;
 }
 
 .c-product-box__title {
+    flex: 1 0 auto;
+    margin: 0 0 30px;
     color: #000000;
     font-family: $font-family-base;
     font-size: 15px;
@@ -23,17 +26,39 @@
 }
 
 .c-product-box__rating {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
 
+.c-product-box__rating--solid {
+    color: $color-orange;
+}
+
+.c-product-box__rating--hollow {
+    color: $color-grayLight;
 }
 
 .c-product-box__price {
-
+    margin: 0 0 30px;
+    color: $color-black;
+    font-family: $font-family-price;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
 }
 
-.c-product-box__price-discount {
-
-}
-
-.c-product-box__price-current {
-
+.c-product-box__price--compare {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    color: $color-grayLight;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        height: 1px;
+        width: calc(100% - 4px);
+        background-color: currentColor;
+    }
 }

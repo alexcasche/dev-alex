@@ -7,9 +7,25 @@
         <div class="o-grid">
             {% for product in collection.products %}
                 <div class="c-product-box o-grid__item">
-                    <img src="{{ product.images[1].src | img_url: '900x1200' }}" alt="{{ image.alt | escape }}">
+                    <img class="c-product-box__image" src="{{ product.images[1].src | img_url: '900x1200' }}" alt="{{ image.alt | escape }}">
                     <hr class="c-product-box__divider" />
                     <p class="c-product-box__title">{{ product.title }}</p>
+                    <div class="c-product-box__rating">
+                        <span class="c-product-box__rating--solid">★</span>
+                        <span class="c-product-box__rating--solid">★</span>
+                        <span class="c-product-box__rating--solid">★</span>
+                        <span class="c-product-box__rating--solid">★</span>
+                        <span class="c-product-box__rating--hollow">☆</span>
+                        </span>
+                    </div>
+                    <p class="c-product-box__price">
+                        {% if product.compare_at_price > product.price %}
+                            <span class="c-product-box__price--compare">
+                                {{ product.compare_at_price | money_without_trailing_zeros }}
+                            </span>
+                        {% endif %}
+                        {{ product.price | money_without_trailing_zeros }}
+                    </p>
                     <button class="c-button u-fullWidth">Select</button>
                 </div>
             {% endfor %}

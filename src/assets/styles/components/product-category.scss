@@ -7,10 +7,10 @@
 .c-product-category__header {
     width: 600px;
     max-width: 100%;
-    color: #000000;
+    color: $color-black;
     font-family: $font-family-base;
     font-size: 86px;
-    font-weight: 900;
+    font-weight: $font-weight-heavy;
     letter-spacing: -3px;
     line-height: 87px;
 }

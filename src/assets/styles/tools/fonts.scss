@@ -3,8 +3,15 @@
     src: url("../fonts/NeueHaas.woff") format('woff');
     font-weight: 400;
 }
+
 @font-face {
     font-family: "Neue Haas";
     src: url("../fonts/NeueHaas-Heavy.woff") format('woff');
-    font-weight: 900;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "GT Pressura";
+    src: url("../fonts/GtPressura-Bold.woff") format('woff');
+    font-weight: 400;
 }
